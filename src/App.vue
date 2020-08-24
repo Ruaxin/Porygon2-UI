@@ -1,15 +1,16 @@
 <template>
-  <div>hi</div>
-  <My/>
+  <div>
+    导航栏
+    |
+    <router-link to="/">首页</router-link>
+    |
+    <router-link to="/test">测试</router-link>
+  </div>
+  <router-view/>
 </template>
 
 <script>
-  import My from './components/My.vue'
-
   export default {
     name: 'App',
-    components: {
-      My
-    }
   }
 </script>
