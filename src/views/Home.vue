@@ -5,8 +5,8 @@
       <h1>Porygon2-UI</h1>
       <h2>总之是个 UI 框架</h2>
       <p class="actions">
-        <a>Github</a>
-        <a>开始</a>
+        <a href="https://github.com/Ruaxin/Porygon2-UI">Github</a>
+        <router-link to="/doc">开始</router-link>
       </p>
     </div>
   </div>
