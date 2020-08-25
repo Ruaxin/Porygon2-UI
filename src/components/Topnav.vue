@@ -1,22 +1,18 @@
 <template>
-  <div>
-    <Topnav/>
-    <div class="banner">
-      <h1>Porygon2-UI</h1>
-      <h2>总之是个 UI 框架</h2>
-      <p class="actions">
-        <a>Github</a>
-        <a>开始</a>
-      </p>
+  <div class="topnav">
+    <div class="logo">
+      LOGO
     </div>
+    <ul class="menu">
+      <li>菜单1</li>
+      <li>菜单2</li>
+    </ul>
   </div>
 </template>
 
 <script lang="ts">
-  import Topnav from '../components/Topnav.vue'
   export default {
-    name: 'Home',
-    components:{Topnav}
+    name: 'Topnav'
   }
 </script>
 
