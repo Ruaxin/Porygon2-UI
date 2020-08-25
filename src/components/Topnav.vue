@@ -4,8 +4,8 @@
       Porygon2-UI
     </div>
     <ul class="menu">
-      <li>菜单1</li>
-      <li>菜单2</li>
+      <li>菜单-1</li>
+      <li>菜单-2</li>
     </ul>
   </div>
 </template>
