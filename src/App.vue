@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="topBar">
     导航栏
     |
     <router-link to="/">首页</router-link>
@@ -14,3 +14,8 @@
     name: 'App',
   }
 </script>
+<style lang="scss" scoped>
+  .topBar{
+    background: #9bcce2;
+  }
+</style>
