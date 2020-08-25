@@ -21,10 +21,12 @@
     background: #77b9d7;
     display: flex;
     padding: 16px;
+    position: relative;
+    z-index: 10;
 
     > .logo {
       margin-right: auto;
-      max-width: 8em;
+      max-width: 6em;
     }
 
     > .menu {

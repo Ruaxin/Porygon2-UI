@@ -38,5 +38,23 @@
 </script>
 
 <style lang="scss" scoped>
+  aside {
+    background: #e57d90;
+    width: 150px;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 70px;
 
+    > h2 {
+      margin-bottom: 4px;
+    }
+
+    > ol {
+      > li {
+        padding: 4px 0;
+      }
+    }
+  }
 </style>
