@@ -1,13 +1,13 @@
 <template>
   <div class="topnav">
-    <div class="logo" @click="toggleMenu">
+    <div class="logo">
       Porygon2-UI
     </div>
     <ul class="menu">
       <li>菜单-1</li>
       <li>菜单-2</li>
     </ul>
-    <img class="toggleAside" src="../assets/Ball.png" alt=""/>
+    <img class="toggleAside" @click="toggleMenu" src="../assets/Ball.png" alt=""/>
   </div>
 </template>
 
