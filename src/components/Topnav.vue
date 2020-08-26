@@ -1,6 +1,6 @@
 <template>
   <div class="topnav">
-    <div class="logo">
+    <div class="logo" @click="toggleMenu">
       Porygon2-UI
     </div>
     <ul class="menu">
@@ -11,9 +11,18 @@
 </template>
 
 <script lang="ts">
+  import {inject, Ref} from 'vue';
+
   export default {
-    name: 'Topnav'
-  }
+    name: 'Topnav',
+    setup() {
+      const asideVisible = inject<Ref<boolean>>('asideVisible');
+      const toggleMenu = () => {
+        asideVisible.value = !asideVisible.value;
+      };
+      return {toggleMenu};
+    }
+  };
 </script>
 
 <style lang="scss" scoped>
