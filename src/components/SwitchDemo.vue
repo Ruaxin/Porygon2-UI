@@ -1,13 +1,112 @@
 <template>
-  <div>switch</div>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
+  <p>Switch 的文档</p>
 </template>
 
-<script>
+<script lang="ts">
   export default {
     name: 'SwitchDemo'
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
