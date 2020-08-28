@@ -10,7 +10,7 @@
   export default {
     name: 'Switch',
     setup() {
-      const checked = ref(true);
+      const checked = ref(false);
       const toggle = () => {
         checked.value = !checked.value;
       };
@@ -29,6 +29,10 @@
     background: #b4b0af;
     border-radius: $h/2;
     position: relative;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   span {
@@ -39,6 +43,7 @@
     top: 2px;
     left: 2px;
     border-radius: $h2/2;
+    transition: left 250ms;
   }
 
   button.checked {
