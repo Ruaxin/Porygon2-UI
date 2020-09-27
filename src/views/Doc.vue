@@ -64,11 +64,10 @@
         flex-shrink: 0;
         background: #e57d90;
         width: 150px;
-        padding: 16px;
         position: fixed;
         top: 0;
         left: 0;
-        padding-top: 70px;
+        padding: 70px 16px 16px;
         height: 100%;
         @media (max-width: 500px) {
           width: 130px;
