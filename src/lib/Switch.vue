@@ -34,25 +34,43 @@ button {
   &:focus {
     outline: none;
   }
-}
-
-span {
-  height: $h2;
-  width: $h2;
-  position: absolute;
-  background: #fffeff;
-  top: 2px;
-  left: 2px;
-  border-radius: $h2/2;
-  transition: left 250ms;
-}
-
-button.checked {
-  background: #5489ae;
 
   > span {
-    left: calc(100% - #{$h2} - 2px)
+    height: $h2;
+    width: $h2;
+    position: absolute;
+    background: url("../assets/Normal.png") no-repeat;
+    background-size: 100% 100%;
+    top: 2px;
+    left: 2px;
+    border-radius: $h2/2;
+    transition: left 250ms;
+  }
+
+  &.checked {
+    background: #5489ae;
+
+    > span {
+      left: calc(100% - #{$h2} - 2px)
+    }
+  }
+
+  &:active {
+    > span {
+      width: $h2 + 4px;
+      height: $h2 + 4px;
+      margin-top: -2px;
+      margin-left: -4px;
+    }
+  }
+
+  &.checked:active {
+    > span {
+      width: $h2 + 4px;
+      height: $h2 + 4px;
+      margin-top: -2px;
+      margin-left: 0;
+    }
   }
 }
-
 </style>
