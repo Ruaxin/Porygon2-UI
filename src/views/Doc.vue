@@ -27,69 +27,70 @@
 </template>
 
 <script lang="ts">
-  import Topnav from '../components/Topnav.vue';
-  import {inject, Ref} from 'vue';
+import Topnav from '../components/Topnav.vue';
+import {inject, Ref} from 'vue';
 
-  export default {
-    name: 'Doc',
-    components: {Topnav},
-    setup() {
-      const asideVisible = inject<Ref<boolean>>('asideVisible');
-      return {asideVisible};
-    }
-  };
+export default {
+  name: 'Doc',
+  components: {Topnav},
+  setup() {
+    const asideVisible = inject<Ref<boolean>>('asideVisible');
+    return {asideVisible};
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-  .layout {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 
-    > .nav {
-      flex-shrink: 0;
+  > .nav {
+    flex-shrink: 0;
+  }
+
+  > .content {
+    flex-grow: 1;
+    padding-top: 53px;
+    padding-left: 150px;
+    display: flex;
+    @media (max-width: 500px) {
+      padding-left: 0;
+      padding-top: 50px;
     }
 
-    > .content {
-      flex-grow: 1;
-      padding-top: 53px;
-      padding-left: 150px;
-      display: flex;
+    > aside {
+      flex-shrink: 0;
+      background: #e57d90;
+      width: 150px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 70px 16px 16px;
+      height: 100%;
       @media (max-width: 500px) {
-        padding-left: 0;
-        padding-top: 50px;
+        width: 130px;
+        z-index: 1;
       }
 
-      > aside {
-        flex-shrink: 0;
-        background: #e57d90;
-        width: 150px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 70px 16px 16px;
-        height: 100%;
-        @media (max-width: 500px) {
-          width: 130px;
-        }
-
-        > h2 {
-          margin-bottom: 4px;
-        }
-
-        > ol {
-          > li {
-            padding: 4px 0;
-          }
-        }
+      > h2 {
+        margin-bottom: 4px;
       }
 
-      > main {
-        flex-grow: 1;
-        padding: 10px 16px;
-        background: #e7e7d8;
-        overflow: auto;
+      > ol {
+        > li {
+          padding: 4px 0;
+        }
       }
+    }
+
+    > main {
+      flex-grow: 1;
+      padding: 10px 16px;
+      background: #e7e7d8;
+      overflow: auto;
     }
   }
+}
 </style>
