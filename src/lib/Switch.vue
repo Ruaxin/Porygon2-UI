@@ -1,5 +1,5 @@
 <template>
-  <button :class="{checked:value}" @click="toggle">
+  <button :class="{'porygon2-checked':value}" @click="toggle" class="porygon2-switch">
     <span></span>
   </button>
 </template>
@@ -20,10 +20,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
-button {
+.porygon2-switch {
   height: $h;
   width: $h*2;
   border: none;
@@ -47,7 +47,7 @@ button {
     transition: left 250ms;
   }
 
-  &.checked {
+  &.porygon2-checked {
     background: #5489ae;
 
     > span {
@@ -64,7 +64,7 @@ button {
     }
   }
 
-  &.checked:active {
+  &.porygon2-checked:active {
     > span {
       width: $h2 + 4px;
       height: $h2 + 4px;
