@@ -1,5 +1,5 @@
 <template>
-  <button class="porygon2-button" :class="{[`theme-${theme}`]:theme}">
+  <button class="porygon2-button" :class="{[`porygon2-theme-${theme}`]:theme}">
     <slot/>
   </button>
 </template>
@@ -53,6 +53,22 @@ $radius: 4px;
   //适用于火狐,效果和上一条一样
   &::-moz-focus-inner {
     border: 0;
+  }
+  &.porygon2-theme-link{
+    border-color: transparent;
+    box-shadow: none;
+    color: $blue;
+    &:hover,&:focus{
+      color: lighten($blue, 10%);
+    }
+  }
+  &.porygon2-theme-text{
+    border-color: transparent;
+    box-shadow: none;
+    color: inherit;
+    &:hover,&:focus{
+      background: darken(white, 5%);;
+    }
   }
 }
 </style>
