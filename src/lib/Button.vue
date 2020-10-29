@@ -1,18 +1,34 @@
 <template>
-  <button class="porygon2-button" :class="{[`porygon2-theme-${theme}`]:theme}">
+  <button class="porygon2-button" :class="classes">
     <slot/>
   </button>
 </template>
 
 <script lang="ts">
+import {computed} from 'vue';
+
 export default {
   name: 'Button',
   props: {
     theme: {
       type: String,
       default: 'button'
-    }
+    },
+    size: {
+      type: String,
+      default: 'normal'
+    },
   },
+  setup(props: { theme: string; size: string; }) {
+    const {theme, size} = props;
+    const classes = computed(() => {
+      return {
+        [`porygon2-theme-${theme}`]: theme,
+        [`porygon2-size-${size}`]: size,
+      };
+    });
+    return {classes};
+  }
 };
 </script>
 
@@ -50,24 +66,43 @@ $radius: 4px;
   &:focus {
     outline: none;
   }
+
   //适用于火狐,效果和上一条一样
   &::-moz-focus-inner {
     border: 0;
   }
-  &.porygon2-theme-link{
+
+  &.porygon2-theme-link {
     border-color: transparent;
     box-shadow: none;
     color: $blue;
-    &:hover,&:focus{
+
+    &:hover, &:focus {
       color: lighten($blue, 10%);
     }
   }
-  &.porygon2-theme-text{
+
+  &.porygon2-theme-text {
     border-color: transparent;
     box-shadow: none;
     color: inherit;
-    &:hover,&:focus{
+
+    &:hover, &:focus {
       background: darken(white, 5%);;
+    }
+  }
+
+  &.porygon2-theme-button {
+    &.porygon2-size-big {
+      font-size: 24px;
+      height: 48px;
+      padding: 0 16px
+    }
+
+    &.porygon2-size-small {
+      font-size: 12px;
+      height: 20px;
+      padding: 0 4px;
     }
   }
 }

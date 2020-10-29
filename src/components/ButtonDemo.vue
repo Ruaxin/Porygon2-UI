@@ -6,6 +6,12 @@
     <Button theme="link">按钮</Button>
     <Button theme="text">按钮</Button>
   </div>
+  <h1>示例2</h1>
+  <div>
+    <Button size="big">按钮</Button>
+    <Button>按钮</Button>
+    <Button size="small">按钮</Button>
+  </div>
 </template>
 
 <script lang="ts">
