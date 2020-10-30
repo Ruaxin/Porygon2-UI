@@ -2,7 +2,7 @@
   <div>Button 示例</div>
   <h1>示例1</h1>
   <div>
-    <Button>图鉴</Button>
+    <Button @click="onClick">图鉴</Button>
     <Button theme="button">图鉴</Button>
     <Button theme="link">图鉴</Button>
     <Button theme="text">图鉴</Button>
@@ -43,6 +43,17 @@
       <Button level="danger" theme="text">精灵球</Button>
     </div>
   </div>
+  <h1>示例4</h1>
+  <div>
+    <Button disabled>禁用</Button>
+    <Button disabled theme="link">禁用</Button>
+    <Button disabled theme="text">禁用</Button>
+  </div>
+  <h1>示例5</h1>
+  <div>
+    <Button loading>对战中</Button>
+    <Button>对战结束</Button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -53,7 +64,7 @@ export default {
   components: {Button},
   setup() {
     const onClick = () => {
-      console.log('hi');
+      window.alert('效果拔群！');
     };
     return {onClick};
   }
@@ -61,7 +72,7 @@ export default {
 </script>
 
 <style scoped>
-.wrapper{
+.wrapper {
   margin: 10px 0;
 }
 </style>
