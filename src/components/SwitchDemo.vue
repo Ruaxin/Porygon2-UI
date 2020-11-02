@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>示例</h1>
     <Switch v-model:value="bool"/>
   </div>
 </template>
@@ -17,3 +18,8 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+h1{
+  margin-bottom: 10px;
+}
+</style>

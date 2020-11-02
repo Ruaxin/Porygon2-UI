@@ -1,7 +1,6 @@
 <template>
-  <div>Button 示例</div>
   <h1>示例1</h1>
-  <div>
+  <div class="wrapper">
     <Button @click="onClick">图鉴</Button>
     <Button theme="button">图鉴</Button>
     <Button theme="link">图鉴</Button>
@@ -44,13 +43,13 @@
     </div>
   </div>
   <h1>示例4</h1>
-  <div>
+  <div class="wrapper">
     <Button disabled>禁用</Button>
     <Button disabled theme="link">禁用</Button>
     <Button disabled theme="text">禁用</Button>
   </div>
   <h1>示例5</h1>
-  <div>
+  <div class="wrapper">
     <Button loading>对战中</Button>
     <Button>对战结束</Button>
   </div>
@@ -71,7 +70,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .wrapper {
   margin: 10px 0;
 }
